@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<img src="img/autumn.jpg" alt="Фото_вход">
+	<main>
+		<div class='content'>
+			<h1>Форма обратной связи</h1>
+			<form method="POST" action="https://httpbin.org/post">
+
+				<input type="hidden" name="user_id" value="1">
+
+				<div>
+					<label for="fio">ФИО</label>
+					<input type="text" name="fio" id="fio" placeholder="Введите ФИО" required>
+				</div>
+				<div>
+					<label for="email">Адрес электронной почты</label>
+					<input type="email" name="email" id="email" placeholder="Введите email" required>
+				</div>
+
+				<fieldset>
+					<legend>Откуда вы узнали о нас?</legend>
+
+					<div>
+						<input type="radio" id="friends" name="source" value="friends">
+						<label for="friends">Рассказали друзья</label>
+					</div>
+
+					<div>
+						<input type="radio" id="internet" name="source" value="internet" checked>
+						<label for="internet">Реклама в интернете</label>
+					</div>
+
+				</fieldset>
+
+				<div>
+					<label for="category">Категория обращения</label>
+					<select name="category id" id="category">
+
+						<option value="1">Жалоба</option>
+						<option value="2" selected>Предложение</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="attachment">Вложение</label>
+					<input type="file" name="attachment" id="attachment">
+				</div>
+
+				<div class="text">
+					<label for="text">Текст сообщения</label>
+					<p><textarea name="text"></textarea></p>
+				</div>
+				<div>
+					<input type="checkbox" name="agreement" id="agreement" value="true" required>
+					<label for="agreement">Согласен с обработкой персональных данных</label>
+				</div>
+				<button><a href="form.html">Вход</a></button>
+				<button type="submit">Отправить</button>
+		</div>
+		</form>
+	</main>
+</body>
+
+</html>

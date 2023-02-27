@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<img src="img/autumn.jpg" alt="Фото_вход">
+	<main class="form">
+		<form method="POST" action="https://httpbin.org/post">
+			<div class='content'>
+				<div class="container">
+					<label for="uname">Логин</label>
+					<input type="text" placeholder="Введите логин" name="uname" id="uname" required>
+				</div>
+				<div class="password">
+					<label for="password">Пароль</label>
+					<input type="text" name="password" id="password" placeholder="Введите пароль" required>
+				</div>
+
+				<div class="checkbox">
+					<input type="checkbox" name="agree" id="agree" value="true">
+					<label for="agree">запомнить меня</label>
+				</div>
+				<div class="bot-block">
+					<button><a href="index.html">Регистрация</a></button>
+					<button type="submit">Отправить</button>
+				</div>
+			</div>
+		</form>
+	</main>
+</body>
+
+</html>
